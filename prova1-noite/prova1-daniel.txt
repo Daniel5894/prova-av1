@@ -6,32 +6,35 @@ Professor: Alex Salgado
 Com relação aos comandos do SO Linux, responda as perguntas abaixo:
 
 1 - Usando uma combinação dos comandos cat, tail e/ou head, crie uma linha de comando linux para exibir as linhas 100 a 110 do arquivo log/access.log
-Resposta (Qual comando você utilizou?): 
+Resposta (Qual comando você utilizou?): cat log/access.log |head n-100| tail n-10
 
 
 
 2 - Renomear o arquivo prova1-2017.txt da sua pasta para prova1-seunome.txt . 
 Ex.: prova1-alex.txt
-Resposta (Qual comando você utilizou?): 
+Resposta (Qual comando você utilizou?): mv prova1-2017.txt prova1-daniel.txt
 
 
 
 3 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma 
 sequencia 1, 2 e 3. 
 Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos você utilizou?
-Resposta: 
+Resposta: touch daniel1.txt daniel2.txt daniel3.txt 
 
 
 
 4 - Listar todos os arquivos vazios a partir da sua pasta principal e 
 direcionar a saida para o terceiro arquivo do item anterior.
-Resposta (Qual comando utilizou?): 
+Resposta (Qual comando utilizou?): find -empty > daniel3.txt
 
 
 
 5 - Crie 1 pasta com seu nome+diadenascimento (ex.:alex25) e copie os 
 3 arquivos criandos anteriormente para esta pasta.
-Resposta (Qual comando utilizou?): 
+Resposta (Qual comando utilizou?): mkdir daniel05
+                                   cp daniel1.txt  /home/aluno/Downloads/prova-av1/prova1-noite/daniel05
+                                   cp daniel2.txt  /home/aluno/Downloads/prova-av1/prova1-noite/daniel05
+                                   cp daniel3.txt  /home/aluno/Downloads/prova-av1/prova1-noite/daniel05
 
 
 
@@ -46,27 +49,28 @@ Resposta:
 7 - Existe um arquivo chamado access.log na sua pasta log. 
 Qual é o ip que aparece no arquivo com mais frequencia e 
 qual ip que aparece no arquivo com menos frequencia?
-Resposta 1 :  
-Resposta 2 (qual comando você utilizou? ):
+Resposta 1 :  Maior frequência foi 75.113.188.234
+              Menor frequẽncia foi 69.16.40.48
+Resposta 2 (qual comando você utilizou? ): cat access.log | sort | uniq -c
 
 
 
 
 8 - Qual o comando linux para mostrar todos os arquivos vazios da pasta atual?
-Resposta: 
+Resposta: find -empty
 
 
 
 9 - Com relação ao arquivo grepdata.txt na pasta log: 
 Imprima todas as linhas que contenham um numero de telefone no formato 999-999-9999 
-Resposta (comando utilizado): 
+Resposta (comando utilizado): grep
 
 
 
 10 - Listar todo o conteudo (todos os arquivos e pastas)
 a partir de sua pasta principal e direcionar a saida 
 para o segundo arquivo do item 3.
-Resposta (comando utilizado): 
+Resposta (comando utilizado): ls > daniel2.txt
 
 
 
