@@ -1,7 +1,7 @@
-Aluno: Vinicius Caldas Gomes Gagliano
+Aluno: Daniel Guimarães Faria
 Prova de Laboratorio de Sistemas Operacionais
 Professor: Alex Salgado
-1o. Semestre de 2017   Turno: Noite            AV1
+2o. Semestre de 2017   Turno: Noite            AV1
 --------------------------------------------------
 Com relação aos comandos do SO Linux, responda as perguntas abaixo:
 
